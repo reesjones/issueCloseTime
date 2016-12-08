@@ -1,0 +1,46 @@
+=== Setup ===
+Classifier: weka.classifiers.trees.J48 -C 0.25 -M 1843
+Testing Dataset: deeplearning
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 60
+|   nissuescreatedinprojectclosed <= 0: 90 (5833.0/437.0)
+|   nissuescreatedinprojectclosed > 0
+|   |   nissuescreatedinproject <= 146: 0 (3073.0/1358.0)
+|   |   nissuescreatedinproject > 146
+|   |   |   nissuesbycreator <= 49
+|   |   |   |   nissuescreatedinproject <= 691: 90 (12125.0/2566.0)
+|   |   |   |   nissuescreatedinproject > 691
+|   |   |   |   |   ncommitsinproject <= 858: 0 (2131.0/1008.0)
+|   |   |   |   |   ncommitsinproject > 858: 90 (3693.0/857.0)
+|   |   |   nissuesbycreator > 49: 90 (2231.0/247.0)
+nissuescreatedinprojectclosed > 60
+|   nissuescreatedinprojectclosed <= 234
+|   |   nissuescreatedinproject <= 480: 0 (6977.0/1933.0)
+|   |   nissuescreatedinproject > 480: 90 (1845.0/503.0)
+|   nissuescreatedinprojectclosed > 234: 0 (8174.0/677.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+=== Evaluation summary string ===
+Correctly Classified Instances       36496               79.198  %
+Incorrectly Classified Instances      9586               20.802  %
+Kappa statistic                          0.5774
+Mean absolute error                      0.3029
+Root mean squared error                  0.3891
+Relative absolute error                 54.1319 %
+Root relative squared error             54.4247 %
+Total Number of Instances            46082     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.769     0.191      0.756     0.769     0.762      0.843    0
+                 0.809     0.231      0.821     0.809     0.815      0.843    90
+Weighted Avg.    0.792     0.213      0.792     0.792     0.792      0.843

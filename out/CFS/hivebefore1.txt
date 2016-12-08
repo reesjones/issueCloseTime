@@ -1,0 +1,67 @@
+
+Options: -C 0.25 -M 225 
+
+J48 pruned tree
+------------------
+: 1 (5648.0/18.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5630               99.6813 %
+Incorrectly Classified Instances        18                0.3187 %
+Kappa statistic                          0     
+Mean absolute error                      0.0064
+Root mean squared error                  0.0564
+Relative absolute error                 97.3233 %
+Root relative squared error             99.9995 %
+Total Number of Instances             5648     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0   18 |    a = 0
+    0 5630 |    b = 1
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5630               99.6813 %
+Incorrectly Classified Instances        18                0.3187 %
+Kappa statistic                          0     
+Mean absolute error                      0.0064
+Root mean squared error                  0.0564
+Relative absolute error                 97.0349 %
+Root relative squared error             99.9994 %
+Total Number of Instances             5648     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0   18 |    a = 0
+    0 5630 |    b = 1
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0 0 0 0 0.5
+0 0 0 0 0.349
+0 0 0 0 0.374
+0 0 0 0 0.347
+0 0 0 0 0.366
+0 0 0 0 0.305
+0 0 0 0 0.328
+0 0 0 0 0.334
+0 0 0 0 0.327
+0 0 0 0 0.294

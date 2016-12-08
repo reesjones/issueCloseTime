@@ -1,0 +1,34 @@
+=== Setup ===
+Classifier: weka.classifiers.trees.J48 -C 0.25 -M 1413
+Testing Dataset: hadoop
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 162: 1 (24674.0/2812.0)
+nissuescreatedinprojectclosed > 162
+|   issuecleanedbodylen <= 20: 0 (2813.0/1205.0)
+|   issuecleanedbodylen > 20: 1 (7838.0/2819.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+=== Evaluation summary string ===
+Correctly Classified Instances       28489               80.6483 %
+Incorrectly Classified Instances      6836               19.3517 %
+Kappa statistic                          0.2318
+Mean absolute error                      0.2823
+Root mean squared error                  0.3757
+Relative absolute error                136.4181 %
+Root relative squared error             83.2658 %
+Total Number of Instances            35325     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.222     0.043      0.572     0.222     0.32       0.706    0
+                 0.957     0.778      0.827     0.957     0.887      0.706    1
+Weighted Avg.    0.806     0.627      0.775     0.806     0.771      0.706

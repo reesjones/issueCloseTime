@@ -1,0 +1,79 @@
+
+Options: -C 0.25 -M 62 
+
+J48 pruned tree
+------------------
+
+ncommitsinproject <= 767
+|   ncommitsinproject <= 607: 7 (106.0/40.0)
+|   ncommitsinproject > 607
+|   |   ncommitsinproject <= 661: 0 (223.0/68.0)
+|   |   ncommitsinproject > 661
+|   |   |   nissuescreatedinproject <= 375: 7 (71.0/24.0)
+|   |   |   nissuescreatedinproject > 375
+|   |   |   |   ncommitsinproject <= 710
+|   |   |   |   |   ncommitsinproject <= 695: 0 (148.0/61.0)
+|   |   |   |   |   ncommitsinproject > 695: 7 (62.0/22.0)
+|   |   |   |   ncommitsinproject > 710: 0 (83.0/23.0)
+ncommitsinproject > 767: 0 (858.0/131.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1182               76.2089 %
+Incorrectly Classified Instances       369               23.7911 %
+Kappa statistic                          0.3175
+Mean absolute error                      0.3427
+Root mean squared error                  0.4139
+Relative absolute error                 84.7551 %
+Root relative squared error             92.0766 %
+Total Number of Instances             1551     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1029   86 |    a = 0
+  283  153 |    b = 7
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1137               73.3075 %
+Incorrectly Classified Instances       414               26.6925 %
+Kappa statistic                          0.2197
+Mean absolute error                      0.3543
+Root mean squared error                  0.4254
+Relative absolute error                 87.6259 %
+Root relative squared error             94.6287 %
+Total Number of Instances             1551     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1018   97 |    a = 0
+  317  119 |    b = 7
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.736 0.946 0.864 0.828 0.72
+0.764 0.92 0.744 0.835 0.74
+0.767 0.932 0.756 0.842 0.687
+0.768 0.921 0.754 0.838 0.679
+0.761 0.925 0.755 0.835 0.668
+0.763 0.915 0.747 0.832 0.665
+0.758 0.92 0.773 0.831 0.653
+0.748 0.926 0.766 0.828 0.661
+0.754 0.931 0.776 0.833 0.661
+0.755 0.922 0.764 0.83 0.664

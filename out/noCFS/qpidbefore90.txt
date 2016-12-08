@@ -1,0 +1,77 @@
+
+Options: -C 0.25 -M 218 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 22: 90 (3729.0/550.0)
+nissuescreatedinprojectclosed > 22
+|   ncommitsinproject <= 936
+|   |   nissuescreatedinprojectclosed <= 54
+|   |   |   nissuesbycreatorclosed <= 4: 90 (558.0/160.0)
+|   |   |   nissuesbycreatorclosed > 4
+|   |   |   |   nissuescreatedinprojectclosed <= 33: 0 (330.0/148.0)
+|   |   |   |   nissuescreatedinprojectclosed > 33: 90 (242.0/77.0)
+|   |   nissuescreatedinprojectclosed > 54: 0 (262.0/77.0)
+|   ncommitsinproject > 936: 90 (354.0/58.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Time taken to build model: 0.1 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4405               80.4566 %
+Incorrectly Classified Instances      1070               19.5434 %
+Kappa statistic                          0.3061
+Mean absolute error                      0.2995
+Root mean squared error                  0.387 
+Relative absolute error                 86.877  %
+Root relative squared error             93.2155 %
+Total Number of Instances             5475     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  367  845 |    a = 0
+  225 4038 |    b = 90
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4395               80.274  %
+Incorrectly Classified Instances      1080               19.726  %
+Kappa statistic                          0.2986
+Mean absolute error                      0.3004
+Root mean squared error                  0.3886
+Relative absolute error                 87.1247 %
+Root relative squared error             93.5899 %
+Total Number of Instances             5475     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  360  852 |    a = 0
+  228 4035 |    b = 90
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.597 0.355 0.068 0.446 0.652
+0.583 0.335 0.068 0.425 0.653
+0.605 0.334 0.064 0.431 0.665
+0.598 0.32 0.062 0.417 0.664
+0.614 0.323 0.059 0.423 0.666
+0.616 0.32 0.057 0.422 0.666
+0.614 0.307 0.056 0.409 0.663
+0.599 0.304 0.058 0.403 0.66
+0.611 0.313 0.057 0.414 0.664
+0.607 0.309 0.057 0.409 0.663

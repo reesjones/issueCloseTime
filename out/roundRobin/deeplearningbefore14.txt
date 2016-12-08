@@ -1,0 +1,38 @@
+=== Setup ===
+Classifier: weka.classifiers.trees.J48 -C 0.25 -M 1843
+Testing Dataset: deeplearning
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 60: 14 (29086.0/2385.0)
+nissuescreatedinprojectclosed > 60
+|   nissuescreatedinprojectclosed <= 234
+|   |   nissuescreatedinproject <= 480
+|   |   |   issuecleanedbodylen <= 79: 0 (5102.0/2078.0)
+|   |   |   issuecleanedbodylen > 79: 14 (1875.0/750.0)
+|   |   nissuescreatedinproject > 480: 14 (1845.0/283.0)
+|   nissuescreatedinprojectclosed > 234: 0 (8174.0/1917.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+=== Evaluation summary string ===
+Correctly Classified Instances       38669               83.9135 %
+Incorrectly Classified Instances      7413               16.0865 %
+Kappa statistic                          0.6027
+Mean absolute error                      0.2421
+Root mean squared error                  0.3479
+Relative absolute error                 36.8184 %
+Root relative squared error             47.7578 %
+Total Number of Instances            46082     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.731     0.12       0.699     0.731     0.715      0.84     0
+                 0.88      0.269      0.896     0.88      0.888      0.84     14
+Weighted Avg.    0.839     0.228      0.842     0.839     0.84       0.84 

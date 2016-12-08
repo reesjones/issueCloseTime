@@ -1,0 +1,73 @@
+
+Options: -C 0.25 -M 81 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 0: 14 (1497.0/8.0)
+nissuescreatedinprojectclosed > 0
+|   nissuescreatedinproject <= 61
+|   |   nissuesbycreatorclosed <= 1: 14 (272.0/128.0)
+|   |   nissuesbycreatorclosed > 1: 0 (107.0/46.0)
+|   nissuescreatedinproject > 61: 14 (169.0/52.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.04 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1811               88.5575 %
+Incorrectly Classified Instances       234               11.4425 %
+Kappa statistic                          0.2908
+Mean absolute error                      0.1349
+Root mean squared error                  0.2597
+Relative absolute error                 62.9985 %
+Root relative squared error             79.4234 %
+Total Number of Instances             2045     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   61  188 |    a = 0
+   46 1750 |    b = 14
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1791               87.5795 %
+Incorrectly Classified Instances       254               12.4205 %
+Kappa statistic                          0.2372
+Mean absolute error                      0.144 
+Root mean squared error                  0.2697
+Relative absolute error                 67.2483 %
+Root relative squared error             82.4797 %
+Total Number of Instances             2045     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   53  196 |    a = 0
+   58 1738 |    b = 14
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.6 0.194 0.023 0.293 0.908
+0.571 0.281 0.034 0.376 0.897
+0.524 0.286 0.037 0.37 0.896
+0.5 0.25 0.035 0.333 0.902
+0.5 0.233 0.031 0.318 0.901
+0.507 0.241 0.031 0.327 0.903
+0.512 0.261 0.032 0.345 0.899
+0.531 0.264 0.031 0.353 0.902
+0.512 0.283 0.037 0.364 0.9
+0.518 0.289 0.037 0.371 0.901

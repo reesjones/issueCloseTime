@@ -1,0 +1,81 @@
+
+Options: -C 0.25 -M 1900 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 60
+|   nissuescreatedinprojectclosed <= 0: 90 (5834.0/438.0)
+|   nissuescreatedinprojectclosed > 0
+|   |   nissuescreatedinproject <= 146: 0 (3239.0/1367.0)
+|   |   nissuescreatedinproject > 146
+|   |   |   nissuesbycreator <= 49
+|   |   |   |   nissuescreatedinproject <= 691: 90 (12125.0/2566.0)
+|   |   |   |   nissuescreatedinproject > 691
+|   |   |   |   |   ncommitsinproject <= 858: 0 (2131.0/1008.0)
+|   |   |   |   |   ncommitsinproject > 858: 90 (3693.0/857.0)
+|   |   |   nissuesbycreator > 49: 90 (2231.0/247.0)
+nissuescreatedinprojectclosed > 60
+|   ncommitsinproject <= 1187: 0 (16292.0/2973.0)
+|   ncommitsinproject > 1187: 90 (1971.0/929.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0.57 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       37131               78.1442 %
+Incorrectly Classified Instances     10385               21.8558 %
+Kappa statistic                          0.5589
+Mean absolute error                      0.3177
+Root mean squared error                  0.3986
+Relative absolute error                 64.2059 %
+Root relative squared error             80.1286 %
+Total Number of Instances            47516     
+
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 16314  5037 |     a = 0
+  5348 20817 |     b = 90
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances       37556               79.0386 %
+Incorrectly Classified Instances      9960               20.9614 %
+Kappa statistic                          0.5769
+Mean absolute error                      0.3039
+Root mean squared error                  0.39  
+Relative absolute error                 61.4102 %
+Root relative squared error             78.4017 %
+Total Number of Instances            47516     
+
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 16496  4855 |     a = 0
+  5105 21060 |     b = 90
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.769 0.773 0.191 0.771 0.851
+0.763 0.77 0.194 0.766 0.844
+0.766 0.774 0.192 0.77 0.844
+0.764 0.772 0.193 0.768 0.844
+0.764 0.768 0.194 0.766 0.842
+0.762 0.767 0.194 0.765 0.842
+0.762 0.769 0.196 0.765 0.843
+0.761 0.771 0.196 0.766 0.843
+0.761 0.773 0.197 0.767 0.844
+0.763 0.772 0.196 0.767 0.844

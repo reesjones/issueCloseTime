@@ -1,0 +1,79 @@
+
+Options: -C 0.25 -M 69 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinproject <= 417
+|   nissuescreatedinproject <= 111: 7 (98.0/9.0)
+|   nissuescreatedinproject > 111
+|   |   ncommitsbycreator <= 2
+|   |   |   nissuescreatedinprojectclosed <= 33: 7 (208.0/70.0)
+|   |   |   nissuescreatedinprojectclosed > 33
+|   |   |   |   issuecleanedbodylen <= 86
+|   |   |   |   |   nissuescreatedinprojectclosed <= 59: 0 (82.0/29.0)
+|   |   |   |   |   nissuescreatedinprojectclosed > 59: 7 (69.0/30.0)
+|   |   |   |   issuecleanedbodylen > 86: 7 (78.0/27.0)
+|   |   ncommitsbycreator > 2: 0 (129.0/57.0)
+nissuescreatedinproject > 417: 0 (1068.0/217.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Time taken to build model: 0.05 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1293               74.6536 %
+Incorrectly Classified Instances       439               25.3464 %
+Kappa statistic                          0.4136
+Mean absolute error                      0.3611
+Root mean squared error                  0.4249
+Relative absolute error                 78.5463 %
+Root relative squared error             88.6308 %
+Total Number of Instances             1732     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 976 136 |   a = 0
+ 303 317 |   b = 7
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1234               71.2471 %
+Incorrectly Classified Instances       498               28.7529 %
+Kappa statistic                          0.3499
+Mean absolute error                      0.3784
+Root mean squared error                  0.4391
+Relative absolute error                 82.3035 %
+Root relative squared error             91.5936 %
+Total Number of Instances             1732     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 916 196 |   a = 0
+ 302 318 |   b = 7
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.802 0.856 0.446 0.828 0.767
+0.792 0.824 0.405 0.808 0.774
+0.789 0.808 0.399 0.798 0.747
+0.785 0.816 0.417 0.8 0.737
+0.777 0.826 0.427 0.801 0.728
+0.762 0.83 0.45 0.795 0.733
+0.749 0.835 0.478 0.79 0.72
+0.753 0.836 0.493 0.793 0.714
+0.749 0.84 0.501 0.792 0.71
+0.752 0.838 0.497 0.793 0.712

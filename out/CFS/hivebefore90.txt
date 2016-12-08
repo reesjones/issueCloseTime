@@ -1,0 +1,75 @@
+
+Options: -C 0.25 -M 225 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 31
+|   nissuescreatedinproject <= 875
+|   |   ncommitsinproject <= 287
+|   |   |   nissuescreatedinproject <= 346: 90 (2211.0/161.0)
+|   |   |   nissuescreatedinproject > 346: 0 (330.0/146.0)
+|   |   ncommitsinproject > 287: 90 (1852.0/508.0)
+|   nissuescreatedinproject > 875: 0 (626.0/190.0)
+nissuescreatedinprojectclosed > 31: 90 (629.0/38.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4605               81.5333 %
+Incorrectly Classified Instances      1043               18.4667 %
+Kappa statistic                          0.4312
+Mean absolute error                      0.2717
+Root mean squared error                  0.3686
+Relative absolute error                 75.5766 %
+Root relative squared error             86.9408 %
+Total Number of Instances             5648     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  620  707 |    a = 0
+  336 3985 |    b = 90
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4633               82.029  %
+Incorrectly Classified Instances      1015               17.971  %
+Kappa statistic                          0.4888
+Mean absolute error                      0.2584
+Root mean squared error                  0.3608
+Relative absolute error                 71.8587 %
+Root relative squared error             85.0891 %
+Total Number of Instances             5648     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  777  550 |    a = 0
+  465 3856 |    b = 90
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.6 0.504 0.09 0.548 0.828
+0.632 0.482 0.081 0.547 0.834
+0.611 0.481 0.088 0.538 0.821
+0.617 0.501 0.092 0.553 0.819
+0.628 0.5 0.089 0.557 0.823
+0.648 0.543 0.092 0.591 0.828
+0.638 0.554 0.097 0.593 0.823
+0.626 0.562 0.103 0.592 0.814
+0.621 0.577 0.107 0.598 0.816
+0.627 0.572 0.104 0.598 0.816

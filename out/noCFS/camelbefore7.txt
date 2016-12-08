@@ -1,0 +1,73 @@
+
+Options: -C 0.25 -M 202 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 13: 7 (2970.0/93.0)
+nissuescreatedinprojectclosed > 13
+|   nissuesbycreatorclosed <= 53
+|   |   ncommitsinproject <= 596: 7 (784.0/226.0)
+|   |   ncommitsinproject > 596: 0 (1061.0/262.0)
+|   nissuesbycreatorclosed > 53: 7 (241.0/17.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4458               88.1725 %
+Incorrectly Classified Instances       598               11.8275 %
+Kappa statistic                          0.6523
+Mean absolute error                      0.1836
+Root mean squared error                  0.303 
+Relative absolute error                 52.7106 %
+Root relative squared error             72.6083 %
+Total Number of Instances             5056     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  799  336 |    a = 0
+  262 3659 |    b = 7
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4448               87.9747 %
+Incorrectly Classified Instances       608               12.0253 %
+Kappa statistic                          0.6496
+Mean absolute error                      0.1813
+Root mean squared error                  0.3025
+Relative absolute error                 52.0514 %
+Root relative squared error             72.5058 %
+Total Number of Instances             5056     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  808  327 |    a = 0
+  281 3640 |    b = 7
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.729 0.696 0.074 0.712 0.887
+0.746 0.7 0.069 0.723 0.873
+0.744 0.692 0.069 0.717 0.873
+0.741 0.693 0.072 0.716 0.88
+0.748 0.686 0.068 0.716 0.884
+0.753 0.695 0.067 0.723 0.881
+0.744 0.694 0.07 0.718 0.882
+0.745 0.691 0.069 0.717 0.885
+0.732 0.698 0.074 0.715 0.886
+0.731 0.7 0.074 0.716 0.887

@@ -1,0 +1,85 @@
+
+Options: -C 0.25 -M 247 
+
+J48 pruned tree
+------------------
+
+issuecleanedbodylen <= 86
+|   nissuescreatedinprojectclosed <= 43: 7 (558.0/193.0)
+|   nissuescreatedinprojectclosed > 43
+|   |   nissuescreatedinprojectclosed <= 199
+|   |   |   nissuesbycreatorclosed <= 30
+|   |   |   |   ncommitsinproject <= 345: 0 (688.0/295.0)
+|   |   |   |   ncommitsinproject > 345
+|   |   |   |   |   issuecleanedbodylen <= 70
+|   |   |   |   |   |   nissuesbycreatorclosed <= 1: 7 (933.0/400.0)
+|   |   |   |   |   |   nissuesbycreatorclosed > 1
+|   |   |   |   |   |   |   nissuesbycreator <= 7: 0 (501.0/213.0)
+|   |   |   |   |   |   |   nissuesbycreator > 7
+|   |   |   |   |   |   |   |   nissuesbycreatorclosed <= 6: 7 (303.0/106.0)
+|   |   |   |   |   |   |   |   nissuesbycreatorclosed > 6: 0 (627.0/291.0)
+|   |   |   |   |   issuecleanedbodylen > 70: 7 (306.0/113.0)
+|   |   |   nissuesbycreatorclosed > 30: 7 (253.0/96.0)
+|   |   nissuescreatedinprojectclosed > 199: 0 (425.0/161.0)
+issuecleanedbodylen > 86: 7 (1583.0/495.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3814               61.7452 %
+Incorrectly Classified Instances      2363               38.2548 %
+Kappa statistic                          0.2064
+Mean absolute error                      0.4668
+Root mean squared error                  0.4831
+Relative absolute error                 94.9839 %
+Root relative squared error             97.46   %
+Total Number of Instances             6177     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1281 1403 |    a = 0
+  960 2533 |    b = 7
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3650               59.0902 %
+Incorrectly Classified Instances      2527               40.9098 %
+Kappa statistic                          0.1538
+Mean absolute error                      0.4698
+Root mean squared error                  0.4876
+Relative absolute error                 95.6006 %
+Root relative squared error             98.3634 %
+Total Number of Instances             6177     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1232 1452 |    a = 0
+ 1075 2418 |    b = 7
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.568 0.485 0.268 0.523 0.656
+0.538 0.438 0.265 0.483 0.613
+0.551 0.448 0.271 0.494 0.615
+0.562 0.468 0.286 0.511 0.608
+0.567 0.442 0.266 0.497 0.611
+0.559 0.447 0.276 0.497 0.61
+0.562 0.44 0.266 0.493 0.612
+0.565 0.453 0.272 0.503 0.614
+0.559 0.446 0.273 0.496 0.609
+0.557 0.442 0.27 0.493 0.611

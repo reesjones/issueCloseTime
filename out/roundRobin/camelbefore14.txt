@@ -1,0 +1,38 @@
+=== Setup ===
+Classifier: weka.classifiers.trees.J48 -C 0.25 -M 1698
+Testing Dataset: camel
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 60: 14 (25575.0/2111.0)
+nissuescreatedinprojectclosed > 60
+|   nissuescreatedinprojectclosed <= 199
+|   |   nissuescreatedinproject <= 274
+|   |   |   issuecleanedbodylen <= 55: 0 (2388.0/859.0)
+|   |   |   issuecleanedbodylen > 55: 14 (1847.0/903.0)
+|   |   nissuescreatedinproject > 274: 14 (3022.0/775.0)
+|   nissuescreatedinprojectclosed > 199: 0 (9628.0/2309.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+=== Evaluation summary string ===
+Correctly Classified Instances       35503               83.6152 %
+Incorrectly Classified Instances      6957               16.3848 %
+Kappa statistic                          0.6025
+Mean absolute error                      0.2487
+Root mean squared error                  0.3526
+Relative absolute error                 62.116  %
+Root relative squared error             76.775  %
+Total Number of Instances            42460     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.7       0.106      0.736     0.7       0.718      0.846    0
+                 0.894     0.3        0.876     0.894     0.885      0.846    14
+Weighted Avg.    0.836     0.242      0.834     0.836     0.835      0.846

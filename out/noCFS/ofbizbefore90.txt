@@ -1,0 +1,71 @@
+
+Options: -C 0.25 -M 247 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 41
+|   nissuesbycreator <= 5: 0 (466.0/178.0)
+|   nissuesbycreator > 5: 90 (281.0/127.0)
+nissuescreatedinprojectclosed > 41: 0 (5430.0/1640.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4232               68.5122 %
+Incorrectly Classified Instances      1945               31.4878 %
+Kappa statistic                          0.062 
+Mean absolute error                      0.4288
+Root mean squared error                  0.463 
+Relative absolute error                 98.6429 %
+Root relative squared error             99.3216 %
+Total Number of Instances             6177     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4078  127 |    a = 0
+ 1818  154 |    b = 90
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4210               68.1561 %
+Incorrectly Classified Instances      1967               31.8439 %
+Kappa statistic                          0.055 
+Mean absolute error                      0.4296
+Root mean squared error                  0.4639
+Relative absolute error                 98.8268 %
+Root relative squared error             99.5163 %
+Total Number of Instances             6177     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4056  149 |    a = 0
+ 1818  154 |    b = 90
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.667 0.973 0.938 0.791 0.528
+0.668 0.987 0.969 0.797 0.516
+0.669 0.979 0.957 0.795 0.512
+0.68 0.975 0.945 0.802 0.513
+0.685 0.972 0.94 0.804 0.515
+0.688 0.972 0.934 0.806 0.516
+0.689 0.976 0.943 0.808 0.514
+0.688 0.979 0.95 0.808 0.515
+0.688 0.978 0.95 0.808 0.513
+0.686 0.98 0.955 0.808 0.514

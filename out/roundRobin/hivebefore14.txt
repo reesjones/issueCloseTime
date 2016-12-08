@@ -1,0 +1,40 @@
+=== Setup ===
+Classifier: weka.classifiers.trees.J48 -C 0.25 -M 1674
+Testing Dataset: hive
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 60: 14 (24082.0/2434.0)
+nissuescreatedinprojectclosed > 60
+|   ncommitsinproject <= 1208
+|   |   nissuescreatedinprojectclosed <= 198
+|   |   |   issuecleanedbodylen <= 22: 0 (2015.0/610.0)
+|   |   |   issuecleanedbodylen > 22
+|   |   |   |   nissuescreatedinproject <= 238: 0 (2493.0/1141.0)
+|   |   |   |   nissuescreatedinproject > 238: 14 (2557.0/1036.0)
+|   |   nissuescreatedinprojectclosed > 198: 0 (9040.0/1934.0)
+|   ncommitsinproject > 1208: 14 (1681.0/489.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+=== Evaluation summary string ===
+Correctly Classified Instances       34224               81.7426 %
+Incorrectly Classified Instances      7644               18.2574 %
+Kappa statistic                          0.5851
+Mean absolute error                      0.273 
+Root mean squared error                  0.3695
+Relative absolute error                 81.2347 %
+Root relative squared error             65.4295 %
+Total Number of Instances            41868     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.714     0.131      0.728     0.714     0.721      0.836    0
+                 0.869     0.286      0.86      0.869     0.864      0.836    14
+Weighted Avg.    0.817     0.235      0.817     0.817     0.817      0.836

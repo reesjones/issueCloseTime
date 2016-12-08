@@ -1,0 +1,73 @@
+
+Options: -C 0.25 -M 202 
+
+J48 pruned tree
+------------------
+
+nissuescreatedinprojectclosed <= 12: 14 (2904.0/103.0)
+nissuescreatedinprojectclosed > 12
+|   ncommitsinproject <= 596
+|   |   ncommitsinproject <= 524: 0 (390.0/193.0)
+|   |   ncommitsinproject > 524: 14 (659.0/117.0)
+|   ncommitsinproject > 596: 0 (1103.0/237.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4406               87.144  %
+Incorrectly Classified Instances       650               12.856  %
+Kappa statistic                          0.6779
+Mean absolute error                      0.1895
+Root mean squared error                  0.3078
+Relative absolute error                 50.0382 %
+Root relative squared error             70.7421 %
+Total Number of Instances             5056     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1063  220 |    a = 0
+  430 3343 |    b = 14
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4375               86.5309 %
+Incorrectly Classified Instances       681               13.4691 %
+Kappa statistic                          0.6504
+Mean absolute error                      0.1957
+Root mean squared error                  0.3149
+Relative absolute error                 51.6523 %
+Root relative squared error             72.3664 %
+Total Number of Instances             5056     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  976  307 |    a = 0
+  374 3399 |    b = 14
+
+
+=== Cross validation results ===
+
+prec  pd    pf    F1    ROC
+0.754 0.8 0.09 0.776 0.888
+0.716 0.797 0.107 0.754 0.875
+0.735 0.74 0.092 0.738 0.877
+0.734 0.774 0.097 0.753 0.884
+0.742 0.783 0.094 0.762 0.89
+0.74 0.781 0.094 0.76 0.884
+0.739 0.762 0.093 0.751 0.884
+0.736 0.778 0.096 0.756 0.885
+0.721 0.778 0.102 0.749 0.886
+0.724 0.769 0.099 0.746 0.886
